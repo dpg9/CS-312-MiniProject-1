@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive form elements */
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Adjust post items */
+li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+h3 {
+  margin: 0;
+}
+
+/* Media query for tablets and desktops */
+@media (min-width: 768px) {
+  ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 45%;
+    margin-right: 5%;
+  }
+
+  li:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 40px;
+    max-width: 1200px;
+  }
+}
